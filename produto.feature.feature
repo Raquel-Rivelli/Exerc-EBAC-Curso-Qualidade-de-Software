@@ -1,8 +1,8 @@
 #language:pt
 
-Funcionalidade: Configurar Produto
+Funcionalidade: Compra de Produto
 Como cliente da EBAC Shop
-Quero configurar meu produto de acordo meu gosto e tamanho
+Quero comprar meu produto de acordo meu gosto e tamanho
 E escolher a quantidade
 Para depois inserir no carrinho
 
@@ -12,9 +12,9 @@ E escolher a cor e quantidade
 Então deve direcionar para página "carrinho de compras"
 
 Cenário:Produto Indisponínel 
+Dado que não tenha produto em estoque
 Quando eu selecionar o produto
 E escolher a cor e quantidade
-E não ter produto em estoque
 Então deve exibir uma mensagem de alerta "Produto Indisponível"
 
 Cenário: Quantidade de Produtos
